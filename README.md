@@ -18,6 +18,7 @@ Daniel Rae Tiangco - 0804165
     - Added custom_exceptions.py
 
 **Daniel's Contribution**:
+
     - Login functionality (login.py)
     - Create reservation logic (makereservation.py)
     - Modify reservation logic (modifyreservation.py)
