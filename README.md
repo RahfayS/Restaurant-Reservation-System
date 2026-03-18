@@ -1,11 +1,12 @@
 # Restaurant-Reservation-System
 
-This the is repository for the final project for the course COIS 2040.
+This is the repository for the final project for the course COIS 2040.
 
 ## Group Members
 
 Rahfay Saberi - 0849745
 
+Daniel Rae Tiangco - 0804165
 
 ### Member Responsibility
 
@@ -15,3 +16,9 @@ Rahfay Saberi - 0849745
     - Built Registration logic (register.py)
     - Added config.py
     - Added custom_exceptions.py
+
+**Daniel's Contribution**:
+    - Login functionality (login.py)
+    - Create reservation logic (makereservation.py)
+    - Modify reservation logic (modifyreservation.py)
+    - logout functionality
