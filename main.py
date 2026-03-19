@@ -2,6 +2,7 @@ from utils.register import Registration
 from utils.login import Login
 from utils.makereservation import MakeReservation
 from utils.viewreservation import ViewReservation
+from utils.modifyreservation import ModifyReservation
 
 def reservation_menu(user_email):
     print("\n===== Reservation Menu =====\n")
@@ -31,7 +32,8 @@ def reservation_menu(user_email):
                 mr.start_reservation()
 
             case 3:
-                print("\nModifying reservation...")
+                mr = ModifyReservation(user_email)
+                mr.start_modify()
 
             case 4:
                 print("\nCancelling reservation...")

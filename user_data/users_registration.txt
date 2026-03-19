@@ -5,3 +5,11 @@ Last name: doe
 Password: password
 Date of Birth: 2005-03-12
 ----------------------
+
+----------------------
+Email: shahzan@live.ca
+First name: shahzan
+Last name: tariq
+Password: s123
+Date of Birth: 2003-02-13
+----------------------
