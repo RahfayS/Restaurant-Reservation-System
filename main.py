@@ -11,7 +11,7 @@ def reservation_menu(user_email):
     while True:
         try:
             option = int(input(
-                "Select Option:\n"
+                "\nSelect Option:\n"
                 "1. View Reservation\n"
                 "2. Make Reservation\n"
                 "3. Modify Reservation\n"
@@ -54,7 +54,7 @@ def main():
     while True:
         try:
             option = int(input(
-                "Select Menu Option:\n"
+                "\nSelect Menu Option:\n"
                 "Register: (press 1)\n"
                 "Login: (press 2)\n"
                 "Exit (press 3)\n"
