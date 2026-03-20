@@ -8,6 +8,8 @@ Rahfay Saberi - 0849745
 
 Daniel Rae Tiangco - 0804165
 
+Shahzan Tariq - 0785469
+
 ### Member Responsibility
 
 **Rahfay's Contribution**:
@@ -23,3 +25,9 @@ Daniel Rae Tiangco - 0804165
     - Create reservation logic (makereservation.py)
     - Modify reservation logic (modifyreservation.py)
     - logout functionality
+
+**Shahzan's Contribution**:
+
+    - Built Modify reservation logic (modifyreservation.py)
+    - Built Cancel reservation logic (cancelreservation.py)
+    - Exception handling (InvalidDateRangeError, InvalidDobError fix, general try-except changes)
