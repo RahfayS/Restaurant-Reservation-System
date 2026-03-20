@@ -86,7 +86,12 @@ class Registration:
         self.first_name = self.get_first_name()
         self.last_name = self.get_last_name()
         self.__password = self.get_password()
-        self.dob = self.get_dob()
+
+        try:
+            self.dob = self.get_dob()
+        except InvalidDobError as e:
+            print(f"\n{e}\n")
+            return
 
         while True:
             print('\nSubmit (press s)')
