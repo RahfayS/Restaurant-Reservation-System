@@ -1,6 +1,7 @@
 import os
 from datetime import datetime
 from utils.config import PROJECT_ROOT
+from utils.custom_exceptions import InvalidDateRangeError
 
 class MakeReservation:
 
@@ -47,8 +48,11 @@ class MakeReservation:
         from_date = self.get_date("From Date (YYYY-MM-DD): ")
         to_date = self.get_date("To Date (YYYY-MM-DD): ")
 
-        if to_date <= from_date:
-            print("\n[ERROR]: To Date must be after From Date.\n")
+        try:
+            if to_date <= from_date:
+                raise InvalidDateRangeError()
+        except InvalidDateRangeError as e:
+            print(f"\n{e}\n")
             return
 
         num_persons = self.get_int("Number of Persons: ")

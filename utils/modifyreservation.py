@@ -1,6 +1,7 @@
 import os
 from datetime import datetime
 from utils.config import PROJECT_ROOT
+from utils.custom_exceptions import InvalidDateRangeError
 
 class ModifyReservation:
 
@@ -110,8 +111,11 @@ class ModifyReservation:
                     from_date = datetime.strptime(line.split(": ", 1)[1].strip(), "%Y-%m-%d")
                 elif line.startswith("To Date:"):
                     to_date = datetime.strptime(line.split(": ", 1)[1].strip(), "%Y-%m-%d")
-            if from_date and to_date and to_date <= from_date:
-                print("\n[ERROR]: To Date must be after From Date. Modification cancelled.\n")
+            try:
+                if from_date and to_date and to_date <= from_date:
+                    raise InvalidDateRangeError()
+            except InvalidDateRangeError as e:
+                print(f"\n{e} Modification cancelled.\n")
                 return
 
         for i, block in enumerate(all_blocks):
