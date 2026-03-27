@@ -64,8 +64,12 @@ class Registration:
 
             try:
                 datetime.strptime(dob, "%Y-%m-%d")
-            except ValueError:
-                raise InvalidDobError()
+            except InvalidDobError as e:
+                print(f'[ERROR]: {e}')
+                continue
+            except Exception as e:
+                print(f'[ERROR]: {e}')
+                continue
             else:
                 return dob
     
