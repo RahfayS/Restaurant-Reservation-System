@@ -1,23 +1,8 @@
-----------------------
-Email: johndoe@gmail.com
-First name: john
-Last name: doe
-Password: password
-Date of Birth: 2005-03-12
-----------------------
-
-----------------------
-Email: shahzan@live.ca
-First name: shahzan
-Last name: tariq
-Password: s123
-Date of Birth: 2003-02-13
-----------------------
 
 ----------------------
 Email: johndoe@gmail.com
-First name: john
-Last name: doe
-Password: pass
-Date of Birth: 2005-05-12
+First name: John
+Last name: Doe
+Password: password123
+Date of Birth: 2005-05-30
 ----------------------
