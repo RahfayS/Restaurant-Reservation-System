@@ -18,6 +18,7 @@ Shahzan Tariq - 0785469
     - Built Registration logic (register.py)
     - Added config.py
     - Added custom_exceptions.py
+    - Created UML Diagram
 
 **Daniel's Contribution**:
 
