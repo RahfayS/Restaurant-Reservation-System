@@ -90,6 +90,10 @@ def main()->None:
             case 3:
                 print("\nThank you for using our Reservation System")
                 return
+            
+            case _:
+                print('\nInvalid option, please try again')
+                continue
 
 
 if __name__ == "__main__":
